@@ -16,7 +16,7 @@ Compare your PDF resume against any job posting — get a fit summary, matched r
 ## How It Works
 
 ```
-PDF upload ──► pypdf text extraction ──► normalize ──┐
+PDF upload ──► pypdf text extraction ──► normalize ───┐
                                                       ├──► LLM comparison ──► analysis
 Job URL ──► httpx fetch ──► extract job text ─────────┘
 
@@ -46,11 +46,11 @@ The app opens at `http://localhost:8501`.
 
 All settings live in `.env` (see `.env.example`):
 
-| Variable | Default | Description |
-|---|---|---|
-| `OPENAI_API_KEY` | *(required for OpenAI)* | Your OpenAI API key |
-| `OPENAI_MODEL` | `gpt-4o-mini` | Chat model to use |
-| `OPENAI_BASE_URL` | *(unset — uses OpenAI)* | Base URL for an OpenAI-compatible API |
+| Variable          | Default                 | Description                           |
+| ----------------- | ----------------------- | ------------------------------------- |
+| `OPENAI_API_KEY`  | _(required for OpenAI)_ | Your OpenAI API key                   |
+| `OPENAI_MODEL`    | `gpt-4o-mini`           | Chat model to use                     |
+| `OPENAI_BASE_URL` | _(unset — uses OpenAI)_ | Base URL for an OpenAI-compatible API |
 
 Change `OPENAI_MODEL` to compare results across models (e.g. `gpt-4o`, `gpt-4.1-mini`).
 
