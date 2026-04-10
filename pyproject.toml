@@ -1,0 +1,18 @@
+[project]
+name = "ai-resumod"
+version = "0.1.0"
+description = "Streamlit app that compares your PDF resume against a job posting using an LLM"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+keywords = ["resume", "job-posting", "llm", "streamlit", "career"]
+dependencies = [
+    "streamlit>=1.45",
+    "pypdf>=5.4",
+    "httpx>=0.28",
+    "beautifulsoup4>=4.13",
+    "lxml>=5.4",
+    "trafilatura>=2.0",
+    "openai>=1.78",
+    "python-dotenv>=1.1",
+]
